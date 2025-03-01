@@ -1,8 +1,8 @@
-# WinAFLEXEHarness
+# WinAFL EXE Harness
 
 WinAFL harness template/example for fuzzing executables.
 
-For more information, see the associated writeup: // TODO //
+For more information, see the associated writeup: <https://debugxp.com/posts/WinAFL_EXE_Fuzzing/>
 
 ## Usage
 
