@@ -33,10 +33,10 @@ bool FixImports(HMODULE hModule)
 	while(importDesc->Name)
 	{
 		const char* dllName = (const char*)((BYTE*)hModule + importDesc->Name);
-		HMODULE hLib = GetModuleHandleA(dllName);
+		HMODULE hLib = LoadLibraryA(dllName);
 		if(!hLib)
 		{
-			printf("GetModuleHandleA() %s %lu\n", dllName, GetLastError());
+			printf("LoadLibraryA() %s %lu\n", dllName, GetLastError());
 			importDesc++;
 			continue;
 		}
